@@ -1,7 +1,91 @@
-The Customer Churn Analysis and Prediction project focused on analyzing customer behavior at a telecommunications company using Microsoft Power BI to identify the key factors driving churn and provide actionable business insights to improve customer retention strategies. The dataset, which consists of 7043 customers, was successfully imported into Power BI, where a comprehensive data cleaning and transformation process was carried out to ensure accurate and reliable analysis. During preprocessing, incorrect data types were corrected, blank values in key fields, such as Total Charges, were handled appropriately, duplicate records were removed, and additional calculated columns, such as tenure groups and customer segmentation categories, were created to improve analytical depth and visualization clarity.
-The analysis began with a Churn Rate Overview dashboard that provided a high-level summary of customer retention performance. KPI cards were created to display the total number of customers, the total number of churned customers, and the churn percentage. The results revealed that 1869 customers, who account for 26.54% of the total customers, had discontinued their services, indicating a noticeable retention challenge within the company. This overview immediately highlighted the importance of understanding the behavioral patterns of customers most likely to churn.
-Customer demographic analysis was conducted using bar charts, pie charts, and stacked visualizations to evaluate how factors such as gender, partner status, and dependent status influenced churn behavior. The results showed that churn occurred across both male (50.48%) and female (49.52%), with relatively similar distribution, suggesting that gender alone was not a major driver of customer attrition. However, customers without partners (51.70%) and customers without dependents (48.13%) demonstrated higher churn tendencies compared to customers with family-related commitments. This insight suggested that customers with stronger household or family ties may have been more likely to maintain long-term subscriptions and remain loyal to the service provider.
-The Contract type analysis showed that customers on month-to-month (31.52%) contracts had the highest churn rate compared to customers on one-year (18.56%) or two-year (23.38%) contracts. These results suggested that shorter and more flexible contracts increase the likelihood of customers leaving the company, while long-term contractual commitments improve customer retention. Payment method analysis revealed that customers using electronic checks showed higher churn levels (15.21%) than customers using automatic bank transfers (3.66%) or credit card (3.29%) payments, while mailed checks accounted for (4.37%). This pattern indicated that automated payment systems may contribute to stronger customer retention due to convenience and reduced service interruption risks.
-Internet service analysis also uncovered notable trends. Customers subscribed to fiber optic internet services exhibited higher churn rates (18.42%) than customers using DSL (6.52%) and those with no internet options (1.60%). This outcome indicates customer dissatisfaction related to pricing, service quality, or performance expectations associated with premium internet services. 
-Overall, the project successfully demonstrated the practical application of business intelligence and data analytics techniques in solving real-world customer retention problems. The analysis provided valuable insights into the major drivers of churn, including short-term contracts, high monthly charges, electronic payment methods, limited customer tenure, and specific internet service categories. Based on these findings, customers are encouraged to adopt long-term contracts. Improved onboarding experiences for new subscribers should also be prioritized, offering loyalty incentives and optimizing pricing strategies for high-risk customer groups.
+Customer Churn Analysis and Prediction Using Power BI
+
+## Project Overview
+
+Customer retention is a critical challenge for telecommunications companies, where customer churn can significantly affect revenue, customer lifetime value, and long-term business growth. This project analyzes customer churn behavior using **Microsoft Power BI** to identify the demographic, contractual, payment, service, and behavioral factors associated with customer attrition.
+
+Using a telecommunications dataset containing **7,043 customer records**, the project applies data cleaning, transformation, exploratory analysis, KPI development, data modeling, and interactive visualization techniques to transform raw customer data into actionable business intelligence.
+
+The primary objective was to understand **who is churning, which services and customer characteristics are associated with higher churn, and what retention-focused strategies could be considered based on the observed patterns**.
+
+## Dataset
+
+The dataset contains information on **7,043 telecommunications customers** and includes variables covering:
+
+* Customer demographics
+* Customer tenure
+* Contract type
+* Payment method
+* Internet service
+* Monthly charges
+* Total charges
+* Partner and dependent status
+* Customer churn status
+* Other service-related attributes
+
+##  Dashboard Analysis
+
+The Power BI solution was structured around several analytical dimensions to provide a comprehensive view of customer churn.
+
+### 1. Churn Rate Overview
+
+The overview dashboard provides a high-level assessment of customer retention performance using KPI cards.
+
+### Key KPIs
+
+| Metric            | Result |
+| ----------------- | -----: |
+| Total Customers   |  7,043 |
+| Churned Customers |  1,869 |
+| Churn Rate        | 26.54% |
+
+The analysis identified **1,869 churned customers**, representing **26.54%** of the customer base.
+
+This establishes a significant customer-retention challenge and provides a baseline for examining the characteristics of customers associated with churn.
+
+## Customer Demographic Analysis
+
+The project examined customer demographics to determine whether characteristics such as gender, partner status, and dependent status were associated with differences in churn.
+
+### Gender
+
+Churn was relatively balanced between male and female customers:
+
+* Male: **50.48%**
+* Female: **49.52%**
+
+The relatively small difference suggests that gender alone does not appear to explain a substantial portion of the observed churn pattern in this dataset.
+
+### Partner Status
+
+Customers without partners represented approximately **51.70%** of observed churn.
+
+Customers with partners demonstrated comparatively lower churn patterns.
+
+### Dependent Status
+
+Customers without dependents represented approximately **48.13%** of churn.
+
+These results suggest that household and family-related characteristics may be associated with customer retention behavior, although they should be interpreted alongside other customer and service attributes rather than treated as independent causal factors.
+
+---
+
+## Contract Type Analysis
+
+Contract duration emerged as an important dimension of customer churn.
+
+Observed churn rates included:
+
+| Contract Type  | Churn Rate |
+| -------------- | ---------: |
+| Month-to-Month |     31.52% |
+| One Year       |     18.56% |
+| Two Year       |     23.38% |
+
+Customers on **month-to-month contracts** displayed the highest observed churn rate at **31.52%**.
+
+The analysis indicates a strong association between contract structure and customer retention. Customers with shorter contractual commitments may have greater flexibility to discontinue their services compared with customers operating under longer contracts
+
+## Business Recommendations
+The analysis suggests that management should pay particular attention to month-to-month customers, newer customers, fiber-optic users, customers with higher charges, and customers using electronic-check payments. These characteristics should be treated as risk indicators for further investigation rather than proof that they independently cause churn.
 
