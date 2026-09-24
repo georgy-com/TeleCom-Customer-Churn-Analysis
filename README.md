@@ -1,4 +1,4 @@
-Customer Churn Analysis and Prediction Using Power BI
+## Customer Churn Analysis and Prediction Using Power BI
 
 ## Project Overview
 
